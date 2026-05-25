@@ -415,7 +415,7 @@ textarea {
   margin-bottom: 10px;
 }
 
-.admin-section > p {
+.admin-section>p {
   color: #6b7280;
   margin-bottom: 18px;
 }
@@ -504,6 +504,7 @@ textarea {
 .activity-item time {
   white-space: nowrap;
 }
+
 /* Dashboard feature cards */
 
 .feature-grid {
@@ -561,7 +562,7 @@ textarea {
     align-items: stretch;
     width: 100%;
   }
-  
+
 }
 
 @media (max-width: 800px) {
@@ -592,5 +593,5 @@ textarea {
   .dashboard-actions {
     flex-direction: column;
   }
-  
+
 }
