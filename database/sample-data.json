@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "username": "Daniel",
+      "email": "daniel@test.com",
+      "passwordNote": "Password is not exported for security. Use the seeded/test password described in README if needed.",
+      "role": "admin"
+    },
+    {
+      "username": "Test User",
+      "email": "user@test.com",
+      "passwordNote": "Password is not exported for security.",
+      "role": "user"
+    }
+  ],
+  "expenseItems": [
+    {
+      "title": "Groceries",
+      "amount": 135.5,
+      "category": "Shopping",
+      "date": "2026-05-20",
+      "notes": "Weekly grocery shop"
+    },
+    {
+      "title": "Train Fare",
+      "amount": 6.8,
+      "category": "Transport",
+      "date": "2026-05-21",
+      "notes": "Trip to university"
+    },
+    {
+      "title": "Lunch",
+      "amount": 15.5,
+      "category": "Food",
+      "date": "2026-05-22",
+      "notes": "Chicken wrap and drink"
+    }
+  ],
+  "userActivities": [
+    {
+      "action": "REGISTER",
+      "details": "User created a new account"
+    },
+    {
+      "action": "LOGIN",
+      "details": "User logged in"
+    },
+    {
+      "action": "CREATE_EXPENSE",
+      "details": "Created expense: Groceries"
+    },
+    {
+      "action": "UPDATE_EXPENSE",
+      "details": "Updated expense: Lunch"
+    },
+    {
+      "action": "DELETE_EXPENSE",
+      "details": "Deleted expense: Train Fare"
+    }
+  ]
+}
