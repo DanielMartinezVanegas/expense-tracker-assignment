@@ -504,6 +504,33 @@ textarea {
 .activity-item time {
   white-space: nowrap;
 }
+/* Dashboard feature cards */
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.feature-card h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #6b7280;
+  margin-bottom: 0;
+}
+
+
 
 /* Mobile */
 
@@ -534,6 +561,7 @@ textarea {
     align-items: stretch;
     width: 100%;
   }
+  
 }
 
 @media (max-width: 800px) {
@@ -564,4 +592,5 @@ textarea {
   .dashboard-actions {
     flex-direction: column;
   }
+  
 }
