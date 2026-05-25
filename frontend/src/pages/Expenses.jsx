@@ -24,8 +24,14 @@ const Expenses = () => {
       const response = await api.get("/expenses");
       setExpenses(response.data);
     } catch (error) {
-      setError(error.response?.data?.message || "Failed to load expenses");
-    } finally {
+      const validationErrors = error.response?.data?.errors;
+
+  if (validationErrors) {
+    setError(validationErrors.join(" "));
+  } else {
+    setError(error.response?.data?.message || "Failed to save expense");
+  }
+} finally {
       setLoading(false);
     }
   };
